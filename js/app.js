@@ -2,7 +2,7 @@ const searchInput = document.getElementById("search--input");
 const searchResult = document.getElementById("search--result");
 
 const searchAndFilter = async (searchText) => {
-  const response = await fetch("/capitalByCountry.json");
+  const response = await fetch("../data/capitalByCountry.json");
   const countries = await response.json();
 
   // get matches to current input
